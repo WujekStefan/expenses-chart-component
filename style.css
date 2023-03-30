@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root{
+  --clr-primary-100: hsl(10, 79%, 65%);
+  --clr-primary-200: hsl(186, 34%, 60%);
+  --clr-neutral-100: hsl(25, 47%, 15%);
+  --clr-neutral-150: hsl(28, 10%, 53%);
+  --clr-neutral-200: hsl(27, 66%, 92%);
+  --clr-neutral-250: hsl(33, 100%, 98%);
+  --clr-white: #fff;
+
+  --ff-dmsans: "DM Sans", "sans-serif";
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff-dmsans);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility */
+
+.text-primary-100 {
+  color: var(--clr-primary-100);
+}
+
+.text-primary-200 {
+  color: var(--clr-primary-200);
+}
+
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+
+.text-neutral-150 {
+  color: var(--clr-neutral-150);
+}
+
+.text-neutral-200 {
+  color: var(--clr-neutral-200);
+}
+
+.text-neutral-250 {
+  color: var(--clr-neutral-250);
+}
+
+.text-white {
+  color: var(--clr-white);
+}
+
+.bg-primary-100 {
+  background-color: var(--clr-primary-100);
+}
+
+.bg-primary-200 {
+  background-color: var(--clr-primary-200);
+}
+
+.bg-neutral-150 {
+  background-color: var(--clr-neutral-150);
+}
+
+.bg-neutral-200 {
+  background-color: var(--clr-neutral-200);
+}
+
+.bg-white {
+  background-color: var(--clr-white);
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.rounded-100 {
+  border-radius: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* Block */
+
+.app {
+  min-height: 100vh;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  padding-block: 4rem;
+}
+
+.balance__container {
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.balance__title {
+  font-size: 1rem;
+}
+
+.balance__logo {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+}
+
+#balance__value {
+  font-size: 1.5rem;
+}
+
+.spending__container {
+  padding: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.spending__title {
+  font-size: 1.5rem;
+}
+
+.spending__graph_wrapper {
+  height: 250px;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.spending__wrapper {
+  gap: 1.3rem;
+}
+
+.spending__graph {
+  width: 2rem;  
+  border-radius: 0.3rem;
+}
+
+#mon {
+  height: 10rem;
+}
+
+#tue {
+  height: 10rem;
+}
+
+#wed {
+  height: 10rem;
+}
+
+#thu {
+  height: 10rem;
+}
+
+#fri {
+  height: 10rem;
+}
+
+#sat {
+  height: 10rem;
+}
+
+#sun {
+  height: 10rem;
+}
+
+#spending__value{
+  font-size: 2rem;
+}
+
+#spending__gap {
+  font-size: 1rem;
+}
+
+.spending__container:last-child {
+  padding-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.spending__container:last-child div:last-child {
+  translate: 0 40%;
+}

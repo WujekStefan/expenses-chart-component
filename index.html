@@ -9,9 +9,65 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="app">
-      My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun
-      Total this month $478.33 +2.4% from last month
+    <section class="app bg-neutral-200">
+      <div class="balance__container bg-primary-100 rounded-100">
+        <h1 class="balance__title font-regular text-white">My balance</h1>
+        <img src="logo.svg" alt="" class="balance__logo" />
+        <span id="balance__value" class="font-bold text-white">$921.48</span>
+      </div>
+      <div class="spending__container bg-white rounded-100">
+        <h1 class="spending__title font-bold text-neutral-100">
+          Spending - Last 7 days
+        </h1>
+        <div class="spending__graph_wrapper flex">
+          <div class="flex flex-col justify-center items-center">
+            <div class="spending__graph bg-primary-100" id="mon"></div>
+            <div class="text-neutral-150">mon</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="spending__graph bg-primary-100" id="tue"></div>
+            <div class="text-neutral-150">tue</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="spending__graph bg-primary-200" id="wed"></div>
+            <div class="text-neutral-150">wed</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="spending__graph bg-primary-100" id="thu"></div>
+            <div class="text-neutral-150">thu</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="spending__graph bg-primary-100" id="fri"></div>
+            <div class="text-neutral-150">fri</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="spending__graph bg-primary-100" id="sat"></div>
+            <div class="text-neutral-150">sat</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <div class="spending__graph bg-primary-100" id="sun"></div>
+            <div class="text-neutral-150">sun</div>
+          </div>
+        </div>
+      </div>
+      <div class="spending__container bg-white rounded-100 flex">
+        <div class="flex flex-col">
+          <span class="spending__description font-regular text-neutral-150"
+            >Total this month</span
+          >
+          <span id="spending__value" class="font-bold text-neutral-100"
+            >$478.33</span
+          >
+        </div>
+        <div class="flex flex-col justify-end">
+          <span id="spending__gap" class="font-bold text-neutral-100"
+            >+2.4%
+          </span>
+          <span class="spending__description font-regular text-neutral-150"
+            >from last month</span
+          >
+        </div>
+      </div>
     </section>
   </body>
 </html>
