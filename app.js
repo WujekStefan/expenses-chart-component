@@ -33,6 +33,26 @@ function setData(data, currentDay, highestAmount) {
   div.setAttribute('data-value', data.amount);
   const percentage = data.amount/highestAmount*100;
   div.style.height = percentage + '%';
+  const popup = document.querySelector(`#${data.day}-popup`);
+  if (popup) {
+    popup.innerText = `$ ${data.amount}`;
+    if (percentage === 100) {
+      popup.style.bottom = percentage - 3 + '%'
+    } else {
+      popup.style.bottom = percentage + 6 + '%';
+    }
+  }
+  div.addEventListener('mouseover', () => {
+    if (popup) {
+      popup.style.display = 'block';
+    }
+  })
+
+  div.addEventListener('mouseleave', () => {
+    if (popup) {
+      popup.style.display = 'none';
+    }
+  })
 }
 
 function getCurrentDay() {

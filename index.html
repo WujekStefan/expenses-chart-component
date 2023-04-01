@@ -11,8 +11,8 @@
     <title>Frontend Mentor | Expenses chart component</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <section class="app bg-neutral-200">
+  <body class="bg-neutral-200">
+    <section class="app">
       <div class="balance__container bg-primary-100 rounded-100">
         <h1 class="balance__title font-regular text-white">My balance</h1>
         <img src="logo.svg" alt="" class="balance__logo" />
@@ -23,32 +23,60 @@
           Spending - Last 7 days
         </h1>
         <div class="spending__graph_wrapper flex">
-          <div class="flex flex-col items-center h-full">
+          <div class="flex flex-col items-center h-full relative">
             <div class="spending__graph bg-primary-100" id="mon"></div>
+            <div
+              id="mon-popup"
+              class="spending__popup bg-neutral-100 text-white"
+            ></div>
             <div class="text-neutral-150">mon</div>
           </div>
-          <div class="flex flex-col items-center h-full">
+          <div class="flex flex-col items-center h-full relative">
             <div class="spending__graph bg-primary-100" id="tue"></div>
+            <div
+              id="tue-popup"
+              class="spending__popup bg-neutral-100 text-white"
+            ></div>
             <div class="text-neutral-150">tue</div>
           </div>
-          <div class="flex flex-col items-center h-full">
+          <div class="flex flex-col items-center h-full relative">
             <div class="spending__graph bg-primary-100" id="wed"></div>
+            <div
+              id="wed-popup"
+              class="spending__popup bg-neutral-100 text-white"
+            ></div>
             <div class="text-neutral-150">wed</div>
           </div>
-          <div class="flex flex-col items-center h-full">
+          <div class="flex flex-col items-center h-full relative">
             <div class="spending__graph bg-primary-100" id="thu"></div>
+            <div
+              id="thu-popup"
+              class="spending__popup bg-neutral-100 text-white"
+            ></div>
             <div class="text-neutral-150">thu</div>
           </div>
-          <div class="flex flex-col items-center h-full">
+          <div class="flex flex-col items-center h-full relative">
             <div class="spending__graph bg-primary-100" id="fri"></div>
+            <div
+              id="fri-popup"
+              class="spending__popup bg-neutral-100 text-white"
+            ></div>
             <div class="text-neutral-150">fri</div>
           </div>
-          <div class="flex flex-col items-center h-full">
+          <div class="flex flex-col items-center h-full relative">
             <div class="spending__graph bg-primary-100" id="sat"></div>
+            <div
+              id="sat-popup"
+              class="spending__popup bg-neutral-100 text-white"
+            ></div>
             <div class="text-neutral-150">sat</div>
           </div>
-          <div class="flex flex-col items-center h-full">
+          <div class="flex flex-col items-center h-full relative">
             <div class="spending__graph bg-primary-100" id="sun"></div>
+            <div
+              id="sun-popup"
+              class="spending__popup bg-neutral-100 text-white"
+            ></div>
             <div class="text-neutral-150">sun</div>
           </div>
         </div>
