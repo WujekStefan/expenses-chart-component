@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js" defer></script>
+
     <title>Frontend Mentor | Expenses chart component</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -20,31 +23,31 @@
           Spending - Last 7 days
         </h1>
         <div class="spending__graph_wrapper flex">
-          <div class="flex flex-col justify-center items-center">
+          <div class="flex flex-col items-center h-full">
             <div class="spending__graph bg-primary-100" id="mon"></div>
             <div class="text-neutral-150">mon</div>
           </div>
-          <div class="flex flex-col justify-center items-center">
+          <div class="flex flex-col items-center h-full">
             <div class="spending__graph bg-primary-100" id="tue"></div>
             <div class="text-neutral-150">tue</div>
           </div>
-          <div class="flex flex-col justify-center items-center">
-            <div class="spending__graph bg-primary-200" id="wed"></div>
+          <div class="flex flex-col items-center h-full">
+            <div class="spending__graph bg-primary-100" id="wed"></div>
             <div class="text-neutral-150">wed</div>
           </div>
-          <div class="flex flex-col justify-center items-center">
+          <div class="flex flex-col items-center h-full">
             <div class="spending__graph bg-primary-100" id="thu"></div>
             <div class="text-neutral-150">thu</div>
           </div>
-          <div class="flex flex-col justify-center items-center">
+          <div class="flex flex-col items-center h-full">
             <div class="spending__graph bg-primary-100" id="fri"></div>
             <div class="text-neutral-150">fri</div>
           </div>
-          <div class="flex flex-col justify-center items-center">
+          <div class="flex flex-col items-center h-full">
             <div class="spending__graph bg-primary-100" id="sat"></div>
             <div class="text-neutral-150">sat</div>
           </div>
-          <div class="flex flex-col justify-center items-center">
+          <div class="flex flex-col items-center h-full">
             <div class="spending__graph bg-primary-100" id="sun"></div>
             <div class="text-neutral-150">sun</div>
           </div>

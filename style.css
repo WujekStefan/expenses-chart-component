@@ -150,6 +150,10 @@ select {
   border-radius: 1rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .flex {
   display: flex;
 }
@@ -168,6 +172,10 @@ select {
 
 .justify-center {
   justify-content: center;
+}
+
+.m-top {
+  margin-top: auto;
 }
 
 /* Block */
@@ -214,6 +222,10 @@ select {
   align-items: flex-end;
 }
 
+.spending__graph_wrapper > div {
+  justify-content: end;
+}
+
 .spending__wrapper {
   gap: 1.3rem;
 }
@@ -221,34 +233,6 @@ select {
 .spending__graph {
   width: 2rem;  
   border-radius: 0.3rem;
-}
-
-#mon {
-  height: 10rem;
-}
-
-#tue {
-  height: 10rem;
-}
-
-#wed {
-  height: 10rem;
-}
-
-#thu {
-  height: 10rem;
-}
-
-#fri {
-  height: 10rem;
-}
-
-#sat {
-  height: 10rem;
-}
-
-#sun {
-  height: 10rem;
 }
 
 #spending__value{
@@ -266,4 +250,8 @@ select {
 
 .spending__container:last-child div:last-child {
   translate: 0 40%;
+}
+
+.spending__graph[data-day=true] {
+  background-color: var(--clr-primary-200);
 }
